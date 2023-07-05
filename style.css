@@ -1,0 +1,96 @@
+body {
+    padding: 25px;
+}
+
+.container {
+    display: inline-block;
+}
+
+.parent {
+    width: 500px;
+    height: 300px;
+
+    background-color: lightgrey;
+
+    border: 2px solid blue;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    padding: 14px;
+    position: relative;
+
+    box-shadow: 10px 10px 10px lightgrey;
+}
+
+.child {
+    width: calc(100% - 22px);
+    height: calc(100% - 22px);
+    max-height: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    min-width: 25%;
+    min-height: 20%;
+
+    background-color: white;
+
+    border: 1px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    padding: 10px;
+
+    font-size: 20px;
+}
+
+.col {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.right {
+    position: fixed;
+}
+
+.right-button {
+    width: 50px;
+    height: 50px;
+
+    margin: 0 20px 15px;
+    box-shadow: 10px 10px 10px lightgrey;
+
+    border: 1px solid;
+    border-radius: 5px;
+
+    font-size: 30px;
+}
+
+.right-button:hover {
+    background-color: lightyellow;
+}
+
+.left {
+    display: inline-block;
+    position: relative;
+}
+
+.left-button {
+    width: 150px;
+    height: 50px;
+
+    margin: 20px 10px 0px 0px;
+    box-shadow: 10px 10px 10px lightgrey;
+
+    border-radius: 5px;
+
+    font-size: 30px;
+    color: white;
+}
+
+.save-button {
+    background-color: forestgreen;
+    border: darkgreen 2px solid;
+}
+
+.cancel-button {
+    background-color: red;
+    border: darkred 2px solid;
+}
